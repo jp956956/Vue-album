@@ -62,7 +62,7 @@ if (process.env.DEV === 'false') {
 app.use(session(sessionSettings))
 
 // 部署上 heroku 一定要設定
-app.set('truse proxy', 1)
+app.set('trust proxy', 1)
 
 app.use('/users', routeUser)
 app.use('/albums', routerAlbum)
